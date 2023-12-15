@@ -1,0 +1,113 @@
+/* styles.css */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+
+}
+
+img {
+    border-radius: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f56c4d;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #d3ac0f;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Estilos del navegador */
+.nav-link {
+    color: #000000;
+    /* Color del texto */
+    font-size: 18px;
+  }
+  
+  /* Cambiar el color del texto de los enlaces de navegación al pasar el ratón por encima */
+  .nav-link:hover {
+    color: #0adbb5;
+    /* Color del texto al hacer hover */
+  }
+  
+  .nav-item {
+    border-right: 2px solid #ecb3b3;
+    /* Añade una línea a la derecha de cada elemento de navegación */
+    padding: 0 10px;
+    /* Espacio entre el texto y la línea */
+  }
+  /* Elimina el borde derecho del último elemento de navegación */
+  .nav-item:last-child {
+    border-right: none;
+  }
+  /* Cambiar el color del texto de los botones de ingreso y registro */
+  .btn {
+    color: #f9f9f9;
+    /* Color del texto de los botones */
+    box-shadow: 2px 8px 10px rgba(0, 0.5, 0.5, 0.5);
+    /*sobra*/
+  }
+  /* Cambiar el color del fondo de los botones de ingreso y registro */
+  .btn-outline-info-success,
+  .btn-success {
+    background-color: #18c795;
+    /* Color de fondo de los botones */
+    border-color: #0c9a32;
+    /* Color del borde de los botones */
+  }
+  /* Cambiar el color de fondo de los botones al hacer hover */
+  .btn-outline-info-success:hover,
+  .btn-success:hover {
+    background-color: #95d5d8;
+    /* Color de fondo al hacer hover */
+    border-color: #0a9d90;
+    /* Color del borde al hacer hover */
+  }
+  /* Estilos para los botones de Ingresar y Registrarse */
+  .btn-outline-info-success,
+  .btn-success {
+    font-weight: bold;
+    /* Fuente en negrita */
+    border-radius: 20px;
+    /* Bordes redondeados */
+  }
+  /* Ajuste del tamaño de la fuente en dispositivos móviles */
+  @media (max-width: 768px) {
+    .fs-2 {
+      font-size: 2rem;
+    }
+    .fs-4 {
+      font-size: 1.5rem;
+    }
+  }
+  #barrio {
+    border-radius: 50%;
+  }
+  /* Ajuste del ancho de la sección de introducción en dispositivos móviles */
+  @media (max-width: 768px) {
+    #intro {
+      width: 90% !important;
+    }
+  }
+  /* Ajuste del tamaño del logo en dispositivos móviles */
+  @media (max-width: 768px) {
+    .header-logo {
+      width: 80%;
+    }
+    #bg-contacto {
+      top: -110px;
+    }
+  }

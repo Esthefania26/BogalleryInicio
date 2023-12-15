@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/a5375fbf32.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../HTML/css/loginn.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de sesión</title>
+</head>
+<body>
+  <section>
+    <div class="contenedor">
+      <div class="formulario">
+        <form action="crudj/login.php" method="POST" onsubmit="return validarFormulario()">
+          <img src="../HTML/imag/logo.png" alt="Logo" class="logo">
+          <h2>Iniciar sesión</h2>
+          <div class="input-contenedor">
+            <i class="fa-solid fa-envelope" style="color: #fffbfb;"></i>
+            <input type="email" name="correo_usu" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Ingrese una dirección de correo electrónico válida">
+            <label for="#">Email</label>
+          </div>
+          <div class="input-contenedor">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="password_usu" required minlength="6"
+              title="La contraseña debe tener al menos 6 caracteres">
+            <label for="#">Contraseña</label>
+          </div>
+
+          <div class="olvidar">
+            <label for="#">
+              <input type="checkbox"> Recordar
+              <a href="#">Olvidé mi contraseña</a>
+            </label>
+          </div>
+          <button type="submit">Acceder</button>
+          <div class="registrar">
+            <p>No tengo cuenta <a href="../HTML/registro2.html">crear una</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="boton-regresar-container">
+    <a href="Principal.html" class="boton-regresar">Regresar</a>
+  </div>
+
+  <script>
+    function validarFormulario() {
+      var correo = document.getElementsByName('correo_usu')[0].value;
+      var password = document.getElementsByName('password_usu')[0].value;
+
+      if (correo === "") {
+        alert("El campo 'correo electrónico' no puede estar vacío.");
+        return false;
+      }
+
+      if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(correo)) {
+        alert("El campo 'correo electrónico' debe tener el formato correcto.");
+        return false;
+      }
+
+      if (password === "") {
+        alert("El campo 'contraseña' no puede estar vacío.");
+        return false;
+      }
+
+      if (password.length < 6) {
+        alert("La contraseña debe tener al menos 6 caracteres.");
+        return false;
+      }
+
+      return true; // Si todos los datos son correctos, la función devuelve true
+    }
+  </script>
+</body>
+</html>

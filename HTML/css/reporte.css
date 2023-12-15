@@ -1,0 +1,10 @@
+.contenedor-formulario {
+    margin: 1px;
+}
+
+thead th,
+th {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 10rem;
+}

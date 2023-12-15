@@ -1,0 +1,60 @@
+/* styles.css */
+
+.logo {
+    max-height: 100px;
+}
+
+.interactive-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    cursor: pointer;
+}
+
+.footer-image {
+    max-height: 100px;
+}
+/* styles.css */
+.module img {
+    max-width: 30%;
+    height: auto;
+}
+/* styles.css */
+
+.module h4 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #343a40;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+header {
+    background-color: #e8f7f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.btn-custom {
+    background-color: #82bda8;
+    /* Cambia el color de fondo del botón */
+    border-color: #19cee2;
+    /* Cambia el color del borde del botón */
+    color: #ffffff;
+    /* Cambia el color del texto del botón */
+
+    padding: 5px 30px;
+}
+/* Añade un nuevo estilo para los elementos de la lista desplegable */
+.dropdown-menu {
+    background-color: #beebf5;
+    /* Cambia el color de fondo del menú desplegable */
+}
+.dropdown-item {
+    color: #ffffff;
+    /* Cambia el color del texto de los elementos de la lista desplegable */
+}
+.dropdown-item:hover {
+    background-color: #20bcd7;
+    /* Cambia el color de fondo al pasar el ratón sobre los elementos de la lista desplegable */
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../HTML/css/registroEmpre.css">
+    <title>Registro empresa</title>
+</head>
+
+<body>
+    <section >
+        <div class="contenedor">
+            <div class="formulario">
+                <form action="registroem1.php" method="post" id="registroForm" >
+                    <img src="../HTML/imag/logo.png" alt="Logo" class="Logo">
+                    <h2>Registro Empresa</h2>
+
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="tel" name="Nit_empresa" required>
+                                <label for="#">Ingrese el Nit de la empresa</label>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="text" name="Nombre_em" required>
+                                <label for="#">Nombre de la empresa</label>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="text" name="Razon_social" required>
+                                <label for="#">Razon social</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="email" name="Correo_em" required>
+                                <label for="#">Correo</label>
+                            </div>
+                            
+                        </div>
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="tel" name="Rut" required>
+                                <label for="#">Rut</label>
+                            </div> 
+                        </div>
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="tel" name="Telefono_em" required>
+                                <label for="#">Telefono</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="text" name="Nomeclatura_em" required>
+                                <label for="#">Nomenclatura</label>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="text" name="Localidad_em" required>
+                                <label for="#">Localidad</label>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="imput-contenedor">
+                                <input type="text" name="Barrio_em" required>
+                                <label for="#">Barrio</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="fila">
+                        <div class="columna centrada">
+                            <div class="imput-contenedor">
+                                <input type="date" name="Fecha_registro_em" required>
+                                <label for="#">Fecha Registro</label>
+                            </div>
+                        </div>
+                        <div class="columna centrada">
+                            <div class="imput-contenedor">
+                                <input type="password" name="contrasena" required>
+                                <label for="#">Contraseña</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <button type="submit">Registrar</button>
+          </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

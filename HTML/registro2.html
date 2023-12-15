@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5375fbf32.js" crossorigin="anonymous"></script>
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../HTML/css/registro2.css">
+</head>
+
+<body>
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <form action="registrousu1.php" method="POST" id="registroForm">
+                    <img src="../HTML/imag/logo.png" alt="Logo" class="Logo">
+                    <h2>Regístrate</h2>
+
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="text" name="Nombre_usu">
+                                <label for="#">Nombre</label>
+                            </div>
+                        </div>
+
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="text"  name="Apellido_usu" required>
+                                <label for="#">Apellidos</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="email" name="Correo_usu" required>
+                                <label for="#">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="password" name="Password_usu" required>
+                                <label for="#">Contraseña</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="date" id="fechaNacimiento" name="Fecha_usu" required>
+                                <label for="#">Fecha de Nacimiento</label>
+                            </div>
+                        </div>
+
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="text" id="edad" name="Edad_usu" readonly>
+                                <label for="#">Edad</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="text" name="Direccion_usu" required>
+                                <label for="#">Direccion</label>
+                            </div>
+                        </div>
+
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="number"  name="Telefono_usu" required>
+                                <label for="#">Telefono</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="text" name="Primer_idioma"  required>
+                                <label for="#">Primer Idioma</label>
+                            </div>
+                        </div>
+
+                        <div class="columna">
+                            <div class="input-contenedor">
+                                <input type="text" name="Segudo_idioma"  required>
+                                <label for="#">Segundo Idioma</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("fechaNacimiento").addEventListener("change", function () {
+            var fechaNacimiento = new Date(this.value);
+            var hoy = new Date();
+            var edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+
+            // Ajusta la edad si aún no ha pasado el cumpleaños en este año
+            if (hoy.getMonth() < fechaNacimiento.getMonth() || (hoy.getMonth() === fechaNacimiento.getMonth() && hoy.getDate() < fechaNacimiento.getDate())) {
+                edad--;
+            }
+
+            document.getElementById("edad").value = edad;
+        });
+    </script>
+
+</body>
+
+</html>

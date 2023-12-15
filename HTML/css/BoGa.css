@@ -1,0 +1,160 @@
+/* ESTILOS DE LA PAGINA PRINCIAPAL*/
+/* Cambiar el color del texto de los enlaces de navegación */
+.nav-link {
+  color: #000000;
+  /* Color del texto */
+  font-size: 18px;
+}
+
+/* Cambiar el color del texto de los enlaces de navegación al pasar el ratón por encima */
+.nav-link:hover {
+  color: #0adbb5;
+  /* Color del texto al hacer hover */
+}
+
+.nav-item {
+  border-right: 2px solid #ecb3b3;
+  /* Añade una línea a la derecha de cada elemento de navegación */
+  padding: 0 10px;
+  /* Espacio entre el texto y la línea */
+}
+/* Elimina el borde derecho del último elemento de navegación */
+.nav-item:last-child {
+  border-right: none;
+}
+/* Cambiar el color del texto de los botones de ingreso y registro */
+.btn {
+  color: #f9f9f9;
+  /* Color del texto de los botones */
+  box-shadow: 2px 8px 10px rgba(0, 0.5, 0.5, 0.5);
+  /*sobra*/
+}
+/* Cambiar el color del fondo de los botones de ingreso y registro */
+.btn-outline-info-success,
+.btn-success {
+  background-color: #18c795;
+  /* Color de fondo de los botones */
+  border-color: #0c9a32;
+  /* Color del borde de los botones */
+}
+/* Cambiar el color de fondo de los botones al hacer hover */
+.btn-outline-info-success:hover,
+.btn-success:hover {
+  background-color: #95d5d8;
+  /* Color de fondo al hacer hover */
+  border-color: #0a9d90;
+  /* Color del borde al hacer hover */
+}
+/* Estilos para los botones de Ingresar y Registrarse */
+.btn-outline-info-success,
+.btn-success {
+  font-weight: bold;
+  /* Fuente en negrita */
+  border-radius: 20px;
+  /* Bordes redondeados */
+}
+/* Ajuste del tamaño de la fuente en dispositivos móviles */
+@media (max-width: 768px) {
+  .fs-2 {
+    font-size: 2rem;
+  }
+  .fs-4 {
+    font-size: 1.5rem;
+  }
+}
+#barrio {
+  border-radius: 50%;
+}
+/* Ajuste del ancho de la sección de introducción en dispositivos móviles */
+@media (max-width: 768px) {
+  #intro {
+    width: 90% !important;
+  }
+}
+/* Ajuste del tamaño del logo en dispositivos móviles */
+@media (max-width: 768px) {
+  .header-logo {
+    width: 80%;
+  }
+  #bg-contacto {
+    top: -110px;
+  }
+}
+.custom-separator {
+  border: none;
+  height: 5px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #d6d983, rgba(0, 0, 0, 0));
+}
+#bg-contacto {
+  position: relative;
+  top: -90px;
+}
+.carousel {
+  width: 1433;
+}
+#bg-contacto {
+  top: -110px;
+}
+.interactive-card {
+  background-color: hsl(60, 100%, 98%);
+  border: 2px solid #cae3dd;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 9px 2px 4px rgba(2, 2, 2, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.interactive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 4px 6px rgba(2, 2, 2, 0.1);
+}
+.interactive-card img {
+  width: 120px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.interactive-card h3 {
+  font-size: 20px;
+  color: #4b8e82;
+}
+.interactive-card p {
+  font-size: 14px;
+  color: #5d6569;
+  margin-bottom: 2px;
+}
+#bg-contacto {
+
+  position: relative;
+  top: -130px;
+}
+#seccion-contacto {
+  background-color: hsl(60, 100%, 98%);
+  min-height: 600px;
+  position: relative;
+}
+#contenedor-formulario {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #cae3dd;
+  border-radius: 5px;
+  max-width: 500px;
+}
+#titulo-formulario {
+  color: #4b8e82;
+}
+footer {
+  background: #b9ded4;
+  min-height: 70px;
+}
+footer p {
+  color: #f9f9f9;
+}
+#iconos i {
+
+  font-size: 26px;
+  padding: 15px;
+  color: #f9f9f9;
+}
+/* fINALIZA ESTILOS DE LA PAGINA PRINCIAPAL*/
+
